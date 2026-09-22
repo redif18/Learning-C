@@ -1,21 +1,90 @@
-# Compiled binaries
+# ================================
+# C / C++ compiled files
+# ================================
+
 *.o
-*.out
+*.obj
+*.a
+*.so
+*.dylib
+*.dll
 *.exe
+*.out
 
-# macOS / Clang debug symbols
-*.dSYM/
+# ================================
+# Build directories
+# ================================
 
-# macOS
-.DS_Store
-
-# IDEs
-.vscode/
-.idea/
-
-# CMake
 build/
 cmake-build-*/
+out/
+bin/
+obj/
 
+# ================================
+# macOS / Clang / LLDB
+# ================================
+
+*.dSYM/
+.DS_Store
+
+# ================================
+# Debug / profiling files
+# ================================
+
+*.dSYM
+*.gcda
+*.gcno
+*.profraw
+*.profdata
+
+# ================================
+# CMake
+# ================================
+
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+compile_commands.json
+CTestTestfile.cmake
+install_manifest.txt
+
+# ================================
 # Xcode
+# ================================
+
 DerivedData/
+*.xcuserstate
+*.xcworkspace/xcuserdata/
+*.xcodeproj/xcuserdata/
+*.xcodeproj/project.xcworkspace/xcuserdata/
+
+# ================================
+# VS Code
+# ================================
+
+# Keep .vscode/tasks.json and launch.json in Git.
+# Ignore only local VS Code data:
+.vscode/*.log
+.vscode/.ropeproject/
+.vscode/.history/
+
+# ================================
+# IDE / editor temporary files
+# ================================
+
+*.swp
+*.swo
+*~
+.idea/
+*.iml
+
+# ================================
+# Temporary files
+# ================================
+
+*.tmp
+*.temp
+*.bak
+*.orig
