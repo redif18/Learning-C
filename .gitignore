@@ -1,12 +1,21 @@
-# Compiled files
+# Compiled binaries
 *.o
 *.out
 *.exe
-*.app
+
+# macOS / Clang debug symbols
+*.dSYM/
 
 # macOS
 .DS_Store
 
-# IDE
+# IDEs
 .vscode/
 .idea/
+
+# CMake
+build/
+cmake-build-*/
+
+# Xcode
+DerivedData/
