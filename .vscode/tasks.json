@@ -1,4 +1,5 @@
 {
+    "version": "2.0.0",
     "tasks": [
         {
             "type": "cppbuild",
@@ -10,10 +11,10 @@
                 "-g",
                 "${file}",
                 "-o",
-                "${fileDirname}/${fileBasenameNoExtension}"
+                "${workspaceFolder}/build/${fileBasenameNoExtension}"
             ],
             "options": {
-                "cwd": "${fileDirname}"
+                "cwd": "${workspaceFolder}"
             },
             "problemMatcher": [
                 "$gcc"
@@ -22,8 +23,7 @@
                 "kind": "build",
                 "isDefault": true
             },
-            "detail": "Задача создана отладчиком."
+            "detail": "Сборка активного C-файла"
         }
-    ],
-    "version": "2.0.0"
+    ]
 }
