@@ -1,0 +1,12 @@
+# Compiled files
+*.o
+*.out
+*.exe
+*.app
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
