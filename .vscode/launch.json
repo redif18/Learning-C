@@ -1,0 +1,14 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "C: Запустить активный файл",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/${fileBasenameNoExtension}.exe",
+            "cwd": "${workspaceFolder}",
+            "preLaunchTask": "C/C++: gcc сборка активного файла",
+            "console": "integratedTerminal"
+        }
+    ]
+}
